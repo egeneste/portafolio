@@ -17,9 +17,6 @@
 
 header {
     background-color: var(--clr-beige);
-    
-    /* height: 40rem; */
-    width: 100vw;
     display: flex;
     flex-direction: column;
    
@@ -41,6 +38,7 @@ header {
     grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr 4fr;
     padding: 1em;
+    padding-bottom: 0;
 }
 
 .main-info .info__title {
@@ -68,33 +66,40 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4em;
-    height: 4em;
+    width: 3em;
+    height: 3em;
     border-radius: 50%;
     background-color: var(--clr-orange);
+    fill: #fef2f2;
 }
-.main-info .imagen {
+.social-media__icon > svg {
+    color: #fef2f2;
+}
+.imagen {
     grid-row: 2/5;
     grid-column: 2/3;
     position: relative;
+    display: flex;
 }
-
 .imagen img {
     width: 100%;
-    position: absolute;
-    top: 20px;
-    left: -60px;
+    height: 100%;
+    /* object-fit: contain; */
+    z-index: 400;
+    align-self: center;
+   
 }
 
 .imagen .img_bgc {
     
-    width: 250px;
-    height: 250px;
+    width: 12em;
+    height: 12em;
     border-radius: 50%;
     background-color: var(--clr-green);
     position: absolute;
     top: 10px;
-    left: 30px;
+    left: 60px;
+    z-index: 100;
 
 }
 .acerca-de-mi {
