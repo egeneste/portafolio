@@ -13,14 +13,14 @@
     
         <header class="header">
             <div class="menu">
-                <nav >
-                    <ul hidden>
-                        <li>Home</li>
-                        <li>Acerca de mi</li>
-                        <li>Mis habilidades</li>
-                        <li>Experiencia</li>
-                        <li>Portafolio</li>
-                        <li>Contacto</li>
+                <nav hidden >
+                    <ul class="navbar">
+                        <li><a href="#home" >Home</a></li>
+                        <li><a href="#acerca" >Acerca de mi</a></li>
+                        <li><a href="#habilidades" >Mis habilidades</a></li>
+                        <li><a href="#experiencia" >Experiencia</a></li>
+                        <li><a href="#portafolio" >Portafolio</a></li>
+                        <li><a href="#contactos" >Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="hamberger-icon">
@@ -32,9 +32,9 @@
                 </div>
             </div>
     
-            <div class="main-info">
+            <div class="main-info" id="home">
                 
-                <div class="info__title">
+                <div class="info__title titulo black">
                     <p>Mobile App Designer</p>
                 </div>
                 <div class="social-media">
@@ -74,30 +74,82 @@
         </header>
     
         <main>
-            <div class="acerca-de-mi">
-                <p>Acerca de mi</p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nihil reiciendis excepturi porro ad soluta dignissimos deserunt doloremque expedita beatae.
-            </div>
+            <section class="personal" id="acerca">
+                <p class="subtitulo section_title">Acerca de mi</p>
+               <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nihil reiciendis excepturi porro ad soluta dignissimos deserunt doloremque expedita beatae.
+               </p>
+
+            </section>
     
-            <div class="habilidades">
+            <section class="habilidades" id="habilidades">
                 <div class="box-circles">
-                    <p>Mis habilidades</p>
-                    <div class="green-circle"></div>
+                    <p class="subtitulo section_title"><span>Mis</span> habilidades</p>
+                    <div class="green-circle" ></div>
                     <div class="orange-circle"></div>
                 </div>
                 
                 <div class="habilidades-details">
-                    <div class="habilidad">
-                        <div class="habilidad__title">
-                            <img src="" alt="">
-                            <p>UX/Design</p>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quas.</p>
-                    </div>
+                    
+                    
                 </div>
-            </div>
+            </section>
+
+            <section>
+                <p class="title">Experiencia</p>
+
+                <div class="experiences">
+                    
+
+                    
+                </div>
+            </section>
         </main>
+
+        <article>
+            <div class="article-img">
+                <img class="once" src="./images/image 11.jpg" alt="img-portafolio">
+                <p class="article-title black">Fitness app</p>
+            </div>
+
+            <div>
+                <p class="article-title">Portafolio</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius commodi est adipisci quisquam fugiat, harum aspernatur delectus corrupti quidem officiis!</p>    
+            </div>
+ 
+            <div>
+                <img src="./images/Rectangle 47.jpg" alt="rectangle">
+                <p class="article-title black">Management app</p>
+            </div>
+
+        </article>
    
     </div>
+
+    <section class="contact-section" id="contactos">
+        <p class="title"> Contacto</p>
+
+        <div class="contact_box_circle"></div>
+        <div class="contact_type">
+            <div>
+                <div>
+                    <img src="/images/phone 3.svg" alt="phone">
+                </div>
+                <p class="contact__title">Numero Celular</p>
+                <p>+1 829-924-3481</p>
+            </div>
+    
+            <div>
+                <div>
+                    <img src="/images/mail 3.svg" alt="Email">
+                </div>
+                <p class="contact__title">Email</p>
+                <p>elzr.geneste@gmail.com</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
